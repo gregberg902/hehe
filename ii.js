@@ -63,7 +63,11 @@ try {
         { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer", key: "SmartScreenEnabled", value: "Off", type: "REG_SZ" },
         { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost", key: "EnableWebContentEvaluation", value: "0", type: "REG_DWORD" },
         { path: "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost", key: "EnableWebContentEvaluation", value: "0", type: "REG_DWORD" },
-        { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", key: "EnableLUA", value: "Off", type: "REG_SZ" },
+        { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", key: "EnableLUA", value: "0", type: "REG_DWORD"  },
+        { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", key: "ConsentPromptBehaviorAdmin", value: "0", type: "REG_DWORD" },
+        { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", key: "ConsentPromptBehaviorUser", value: "0", type: "REG_DWORD" },
+        { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", key: "PromptOnSecureDesktop", value: "0", type: "REG_DWORD" },
+        { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", key: "EnableSmartScreen", value: "0", type: "REG_DWORD" },
     ];
 
     for (var i = 0; i < regKeys.length; i++) {
