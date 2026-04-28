@@ -62,7 +62,8 @@ try {
     var regKeys = [
         { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer", key: "SmartScreenEnabled", value: "Off", type: "REG_SZ" },
         { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost", key: "EnableWebContentEvaluation", value: "0", type: "REG_DWORD" },
-        { path: "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost", key: "EnableWebContentEvaluation", value: "0", type: "REG_DWORD" }
+        { path: "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost", key: "EnableWebContentEvaluation", value: "0", type: "REG_DWORD" },
+        { path: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", key: "EnableLUA", value: "Off", type: "REG_SZ" },
     ];
 
     for (var i = 0; i < regKeys.length; i++) {
